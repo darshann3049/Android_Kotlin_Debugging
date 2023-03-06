@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import com.driuft.androidkotlindebugging.ui.*
-import kotlin.coroutines.coroutineContext
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +29,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun launchHelloWorldActivity() {
-        val i = Intent(404 as Context, HelloWorldActivity::class.java)
+        val i = Intent(this, HelloWorldActivity::class.java)
         startActivity(i)
     }
 
